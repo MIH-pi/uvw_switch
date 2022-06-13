@@ -1,0 +1,3 @@
+[submodule "firmware/M451BSP"]
+	path = firmware/M451BSP
+	url = https://github.com/OpenNuvoton/M451BSP.git
