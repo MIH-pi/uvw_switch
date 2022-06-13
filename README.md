@@ -1,2 +1,2 @@
 # uvw_switch
-A three-phase motor DPDT relay switch
+A three-phase motor 3PDT relay switch
