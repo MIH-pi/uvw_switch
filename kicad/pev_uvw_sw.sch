@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:pev_uvw_sw-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -18,25 +17,25 @@ $Sheet
 S 1100 1500 2000 1500
 U 5CCF4E54
 F0 "Power" 50
-F1 "power/file5CCF4E53.sch" 50
+F1 "file5CCF4E53.sch" 50
 $EndSheet
 $Sheet
 S 1100 4000 2000 1500
 U 5CCF4F9E
 F0 "Interface gateway" 50
-F1 "M453/file5CCF4F9D.sch" 50
+F1 "file5CCF4F9D.sch" 50
 $EndSheet
 $Sheet
 S 4600 1500 2000 1500
 U 5CCF4FE5
 F0 "Arduino compatible" 50
-F1 "ATmega/file5CCF4FE4.sch" 50
+F1 "file5CCF4FE4.sch" 50
 $EndSheet
 $Sheet
 S 4600 4000 1950 1500
 U 5CCF501E
 F0 "Relays" 50
-F1 "relays/file5CCF501D.sch" 50
+F1 "file5CCF501D.sch" 50
 $EndSheet
 $Comp
 L pev_uvw_sw-rescue:MountingHole-Mechanical H1
