@@ -1,5 +1,5 @@
 include ./makefile.conf
-NAME=usb_serial
+NAME=HelloWorld
 
 STARTUP_DEFS=-D__STARTUP_CLEAR_BSS -D__START=main
 
