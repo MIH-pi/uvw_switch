@@ -1,5 +1,5 @@
 include ./makefile.conf
-NAME=HelloWorld
+NAME=usb_serial
 
 STARTUP_DEFS=-D__STARTUP_CLEAR_BSS -D__START=main
 
@@ -7,23 +7,23 @@ STARTUP_DEFS=-D__STARTUP_CLEAR_BSS -D__START=main
 # unused without following option
 CFLAGS+=-fno-builtin
 
-LDSCRIPTS=-L. -L$(BASE)Library/Device/Nuvoton/M0A21/Source/GCC -T gcc_arm.ld
+LDSCRIPTS=-L. -L$(BASE)/Library/Device/Nuvoton/M451Series/Source/GCC -T gcc_arm.ld
 
 LFLAGS=$(USE_NANO) $(USE_NOHOST) $(LDSCRIPTS) $(GC) $(MAP)
 
 #$(NAME)-$(CORE).axf: main.c $(NAME).c $(STARTUP)
 #	$(CC) $^ $(CFLAGS) $(LFLAGS) -o $@
 IPATH= . \
-       ../M0A21BSP/Library/CMSIS/Include \
-       ../M0A21BSP/Library/Device/Nuvoton/M0A21/Include \
-       ../M0A21BSP/Library/StdDriver/inc \
+       ../M451BSP/Library/CMSIS/Include \
+       ../M451BSP/Library/Device/Nuvoton/M451Series/Include \
+       ../M451BSP/Library/StdDriver/inc \
        ../Library \
        User
 SRC=$(wildcard \
        *.c \
-       ../M0A21BSP/Library/Device/Nuvoton/M0A21/Source/*.c \
-       ../M0A21BSP/Library/Device/Nuvoton/M0A21/Source/GCC/*.c \
-       ../M0A21BSP/Library/StdDriver/src/*.c \
+       ../M451BSP/Library/Device/Nuvoton/M451Series/Source/*.c \
+       ../M451BSP/Library/Device/Nuvoton/M451Series/Source/GCC/*.c \
+       ../M451BSP/Library/StdDriver/src/*.c \
        ../Library/*.c \
        User/*.c \
 )
