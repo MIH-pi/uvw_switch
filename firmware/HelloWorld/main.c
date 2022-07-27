@@ -48,10 +48,6 @@ int main()
     /* Init UART0 to 115200-8n1 for print message */
     UART_Open(UART0, 115200);
 
-    GPIO_SetMode(PB, BIT3, GPIO_MODE_OUTPUT);
-
-    PB3=1;
-
     printf("\n");
     printf("Simple Demo Code\n\n");
 
